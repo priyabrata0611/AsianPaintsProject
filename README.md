@@ -60,6 +60,43 @@ Clone the repository or download the module files, then install dependencies:
 ```bash
 mvn clean install
 
+3️⃣ Configuration
+Update config.properties file:
+
+properties
+Copy
+Edit
+baseUrl=https://www.asianpaints.com
+browser=chrome
+You can override browser from CLI:
+
+bash
+Copy
+Edit
+mvn test -Dbrowser=edge
+4️⃣ Run the Tests
+Run all Inspiration tab tests using:
+
+bash
+Copy
+Edit
+mvn test
+Or with a specific TestNG suite:
+
+bash
+Copy
+Edit
+mvn test -DsuiteXmlFile=testng.xml
+📊 Test Reports
+After execution, a detailed Extent Report will be available at:
+
+Copy
+Edit
+ExtentReports/ExtentReport.html
+Open it in a browser to view pass/fail status, screenshots, logs, and step details.
+
+
+
 👤 Module Owner
 Name: Priyabrata Behera
 
