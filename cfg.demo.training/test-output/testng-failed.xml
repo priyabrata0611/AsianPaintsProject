@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Asian Paints Tests]">
-  <test thread-count="2" parallel="tests" name="Firefox Test(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="tests.AutomationTest">
         <methods>
           <include name="clickInspirationTabOnly"/>
+          <include name="testInspirationSubModulesFailing"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- tests.AutomationTest -->
     </classes>
-  </test> <!-- Firefox Test(failed) -->
-  <test thread-count="2" parallel="tests" name="Chrome Test(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="tests.AutomationTest">
-        <methods>
-          <include name="clickInspirationTabOnly"/>
-          <include name="setUp"/>
-          <include name="testColourCombinationsPage"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- tests.AutomationTest -->
-    </classes>
-  </test> <!-- Chrome Test(failed) -->
-</suite> <!-- Failed suite [Asian Paints Tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
